@@ -1,28 +1,30 @@
 <?php
-
-// Display the whole course as "topics" made of of modules
-// Included from "view.php"
 /**
- * Evaluation topics format for course display - NO layout tables, for accessibility, etc.
+ * Slim Topics Information
  *
- * A duplicate course format to enable the Moodle development team to evaluate
- * CSS for the multi-column layout in place of layout tables.
- * Less risk for the Moodle 1.6 beta release.
- *   1. Straight copy of topics/format.php
- *   2. Replace <table> and <td> with DIVs; inline styles.
- *   3. Reorder columns so that in linear view content is first then blocks;
- * styles to maintain original graphical (side by side) view.
+ * A topic based format that is identical to the standard topics format except the 'Topic Outline' header and
+ * 'section number' have been removed.  Full installation instructions, code adaptions and credits are included
+ * in the 'Readme.txt' file.
  *
- * Target: 3-column graphical view using relative widths for pixel screen sizes
- * 800x600, 1024x768... on IE6, Firefox. Below 800 columns will shift downwards.
+ * @package    course/format
+ * @subpackage slimtopics
+ * @version    See the value of '$plugin->version' in version.php.
+ * @copyright  &copy; 2012-onwards G J Barnard in respect to modifications of standard topics format.
+ * @author     G J Barnard - gjbarnard at gmail dot com and {@link http://moodle.org/user/profile.php?id=442195}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License
  *
- * http://www.maxdesign.com.au/presentation/em/ Ideal length for content.
- * http://www.svendtofte.com/code/max_width_in_ie/ Max width in IE.
- *
- * @copyright &copy; 2006 The Open University
- * @author N.D.Freear@open.ac.uk, and others.
- * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 defined('MOODLE_INTERNAL') || die();
